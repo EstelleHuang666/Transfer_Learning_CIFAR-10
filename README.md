@@ -1,1 +1,0 @@
-Transfer_Learning_CIFAR-10
