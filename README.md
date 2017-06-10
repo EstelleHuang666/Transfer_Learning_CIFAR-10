@@ -1,5 +1,6 @@
 # Transfer_Learning_CIFAR-10
 Using TensorFlow and the idea of transfer learning to trian over the dataset of CIFAR-10.
+
 First of all, I would like to express my upmost thanks from the bottom of my heart to Scott Thompson, the author of original project, though it takes me quite a long time to correct some bugs caused by the update in TensorFlow or other reasons. This project is improved based on his code.
 https://medium.com/@st553/using-transfer-learning-to-classify-images-with-tensorflow-b0f3142b9366
 
@@ -26,4 +27,4 @@ Input http://localhost:6006 in the browser.
 For this project, you have to calculate the value at layer pool_3 first. In this case, we need to proceed serialize_data() in transfer_cifar10_softmax.py, getting 4 .npy files named by current time. Correct the name of these files in load_pool3_data().
 
 ## Train the Last Fully Connected Layer
-Run the transfer_cifar10_softmax.py, and you could get the output.
+Run the transfer_cifar10_softmax.py, and you could get the output. The design of the code structure is somehow inefficient, under this circumstance, further improvement will be made in future.
