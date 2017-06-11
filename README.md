@@ -10,17 +10,23 @@ Download the already trained Inception v3 based on ImageNet from http://download
 Download CIFAR-10 from http://www.cs.toronto.edu/~kriz/cifar.html. Put these data uder the path directed by README.md.
 
 If you have the interest to complete the pre-training process by yourself, refer to the following steps:
+
 Step 1: download https://github.com/tensorflow/tensorflow, which is quite different from the lib you get by "pip install tensorflow".
+
 Step 2: cd /tensorflow/examples/image_retraining/retrain.py.
+
 Step 3: download a dataset, saying we use https://github.com/caicloud/tensorflow-tutorial/tree/master/Deep_Learning_with_TensorFlow/datasets/flower_photos. Put the downloaded file into the path in Step2.
+
 Step 4: 
 ```
 python retrain.py --image_dir flower_photos/
 ```
+
 Step 5: for Mac, find the .pb files in the /tmp path, using tensorboard to visualize it.
 ```
 python tensorflow/tensorboard/tensorboard.py --logdir=/tmp/mnist_logs
 ```
+
 Input http://localhost:6006 in the browser.
 
 ## Get the Output of Pool_3
